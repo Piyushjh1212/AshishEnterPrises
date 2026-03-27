@@ -419,6 +419,10 @@ ul {
     font-size: 28px;
   }
 
+  .hdr-nav-links{
+    display: none;
+  }
+
   .hm-hero-badges .hm-badge {
     width: 100%;
     text-align: center;

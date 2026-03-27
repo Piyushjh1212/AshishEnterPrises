@@ -147,7 +147,7 @@ ul {
 .hm-hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url(./Banneerhome.jpg);
+  background-image: url(https://res.cloudinary.com/dieboinjz/image/upload/v1774603022/GacImages/nq987i6dihiz9xqmllze.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -755,6 +755,354 @@ ul {
 
   .prdsec-price {
     font-size: 22px;
+  }
+}
+
+
+/* services  price style here  */
+
+/* =========================
+   AMC / SURPRISE SECTION START
+========================= */
+
+.srprse-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #f4fbff 0%, #eef7ff 100%);
+}
+
+.srprse-section-title {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px auto;
+}
+
+.srprse-section-title h2 {
+  font-size: 42px;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.srprse-section-title p {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.srprse-amc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.srprse-card {
+  position: relative;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(0, 119, 255, 0.08);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.srprse-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 24px 55px rgba(0, 119, 255, 0.14);
+}
+
+.srprse-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #56b6ff, #0d6efd);
+}
+
+.srprse-tag {
+  display: inline-block;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  letter-spacing: 0.4px;
+}
+
+.srprse-card h3 {
+  font-size: 30px;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.srprse-price {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0077ff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.srprse-price span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.srprse-card p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.9;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Featured Middle Card */
+.srprse-card-featured {
+  background: linear-gradient(135deg, #0d6efd, #3ba7ff);
+  transform: scale(1.04);
+  box-shadow: 0 24px 60px rgba(13, 110, 253, 0.25);
+}
+
+.srprse-card-featured::before {
+  background: linear-gradient(90deg, #ffffff, #d9ecff);
+}
+
+.srprse-card-featured .srprse-tag {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.srprse-card-featured h3,
+.srprse-card-featured .srprse-price,
+.srprse-card-featured p,
+.srprse-card-featured .srprse-price span {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .srprse-amc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .srprse-card-featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .srprse-section {
+    padding: 80px 16px;
+  }
+
+  .srprse-section-title h2 {
+    font-size: 34px;
+  }
+
+  .srprse-section-title p {
+    font-size: 16px;
+  }
+
+  .srprse-amc-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .srprse-card {
+    padding: 34px 24px;
+  }
+
+  .srprse-card h3 {
+    font-size: 26px;
+  }
+
+  .srprse-price {
+    font-size: 34px;
+  }
+
+  .srprse-price span {
+    font-size: 16px;
+  }
+
+  .srprse-card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .srprse-section-title h2 {
+    font-size: 28px;
+  }
+
+  .srprse-card h3 {
+    font-size: 24px;
+  }
+
+  .srprse-price {
+    font-size: 30px;
+  }
+
+  .srprse-tag {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* feedback section here  */
+
+
+/* =========================
+   FEEDBACK / REVIEW SECTION START
+========================= */
+
+.fdbc-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.fdbc-section-title {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+}
+
+.fdbc-section-title h2 {
+  font-size: 42px;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.fdbc-section-title p {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.fdbc-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.fdbc-card {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 34px 28px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(0, 119, 255, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fdbc-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 50px rgba(0, 119, 255, 0.12);
+}
+
+.fdbc-card::before {
+  content: "❝";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 60px;
+  color: rgba(13, 110, 253, 0.08);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.fdbc-stars {
+  font-size: 22px;
+  color: #fbbf24;
+  margin-bottom: 18px;
+  letter-spacing: 3px;
+}
+
+.fdbc-review-card p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #475569;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.fdbc-review-card h4 {
+  font-size: 18px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .fdbc-review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .fdbc-section {
+    padding: 80px 16px;
+  }
+
+  .fdbc-section-title h2 {
+    font-size: 34px;
+  }
+
+  .fdbc-section-title p {
+    font-size: 16px;
+  }
+
+  .fdbc-review-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fdbc-card {
+    padding: 30px 22px;
+  }
+
+  .fdbc-review-card p {
+    font-size: 16px;
+  }
+
+  .fdbc-review-card h4 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fdbc-section-title h2 {
+    font-size: 28px;
+  }
+
+  .fdbc-stars {
+    font-size: 20px;
+  }
+
+  .fdbc-review-card p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .fdbc-review-card h4 {
+    font-size: 16px;
   }
 }
 

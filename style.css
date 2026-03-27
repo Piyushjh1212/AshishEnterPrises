@@ -179,6 +179,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .tp-para{
+    display: none;
+  }
+}
+
 /* =========================
    HERO SECTION START
 ========================= */

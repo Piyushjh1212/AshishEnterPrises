@@ -10,23 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
   <!-- Highlight Section -->
 
-  <!-- <div class="tp-Highlight-container">
+  <div class="tp-Highlight-container" id="topCallBar">
     <h2 class="tp-header">Need Fast RO Service?</h2>
-    <p class="tp-para">Call now for installation, repair, filter replacement, and
-      complete RO maintenance support.</p>
+    <p class="tp-para">
+      Call now for installation, repair, filter replacement, and complete RO maintenance support.
+    </p>
     <a href="tel:+919522411854" class="tp-btn">📞 Call Now</a>
-  </div> -->
+  </div>
 
 
   <!-- Header / Navbar -->
 
-  <header class="hero header">
+  <header class="hero header" id="mainHeader">
     <div class="hdr-container navbar">
       <div class="logo">
         <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603011/GacImages/btitbaf7ekdt95whthkd.jpg"
@@ -242,15 +244,22 @@
 
   <!-- JS for Search -->
   <script>
-    function searchProducts() {
-      const input = document.getElementById('searchInput').value.toLowerCase();
-      const products = document.querySelectorAll('.product-item');
-      products.forEach(product => {
-        const text = product.innerText.toLowerCase();
-        product.style.display = text.includes(input) ? 'block' : 'none';
+    document.addEventListener("DOMContentLoaded", function () {
+      const topBar = document.getElementById("topCallBar");
+      const header = document.getElementById("mainHeader");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 120) {
+          topBar.classList.add("show");
+          header.classList.add("with-topbar");
+        } else {
+          topBar.classList.remove("show");
+          header.classList.remove("with-topbar");
+        }
       });
-    }
+    });
   </script>
+
 
 </body>
 

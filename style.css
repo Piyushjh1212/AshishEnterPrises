@@ -191,7 +191,7 @@ body {
 
   /* Header ko top bar ke niche shift karo */
   .header.with-topbar {
-    top: 70px;
+    top: 48px;
   }
 
   /* Page content navbar ke niche chipke na */
@@ -218,6 +218,9 @@ body {
 @media (max-width: 480px){
   .hr-hero{
     padding: 0 0 0 0;
+  }
+  .tp-Highlight-container{
+    flex-direction: row;
   }
   
 }

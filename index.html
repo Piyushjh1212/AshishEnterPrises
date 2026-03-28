@@ -7,6 +7,7 @@
   <title>Ashish Enterprises | RO Water Purifier Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -28,13 +29,13 @@
 
   <!-- Header / Navbar -->
 
-  <header class="hero header" id="mainHeader">
+  <header class="hr-hero header" id="mainHeader">
     <div class="hdr-container navbar">
       <div class="logo">
         <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603011/GacImages/btitbaf7ekdt95whthkd.jpg"
           alt="Ashish Enterprises Logo" width="80" height="80">
       </div>
-      <ul class="hdr-nav-links">
+      <ul id="navMenu" class="hdr-nav-menu">
         <li><a href="#services">Services</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#reviews">Reviews</a></li>
@@ -42,6 +43,11 @@
         <li><a href="#booking">Booking</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick=HandleMenuClick()>
+        </i>
+      </div>
     </div>
   </header>
 
@@ -141,7 +147,7 @@
 
           <h3>Oliver International</h3>
           <p>Advanced purification with multi-stage filtration.</p>
-          <div class="prdsec-price">₹8,999</div>
+          <div class="prdsec-price">₹12,999</div>
           <a href="#contact" class="prdsec-btn prdsec-btn-primary">Enquiry</a>
         </div>
 
@@ -258,6 +264,10 @@
         }
       });
     });
+
+    function HandleMenuClick() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
   </script>
 
 

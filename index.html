@@ -2,31 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-  img-src 'self' data: https://res.cloudinary.com https://upload.wikimedia.org;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-  font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-  script-src 'self' 'unsafe-inline';
-  connect-src 'self';
-  frame-ancestors 'none';
-  base-uri 'self';
-  form-action 'self';">
-  <title>Ashish Enterprises | RO Water Purifier Services</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Better Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' data: https://res.cloudinary.com https://upload.wikimedia.org;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+    script-src 'self' 'unsafe-inline';
+    connect-src 'self';
+    object-src 'none';
+    frame-ancestors 'none';
+    base-uri 'self';
+    form-action 'self';
+    upgrade-insecure-requests;
+  " />
+
+  <meta name="description"
+    content="Ashish Enterprises provides RO water purifier installation, repair, maintenance, filter replacement, and AMC services for homes and offices." />
+  <meta name="keywords"
+    content="RO service, water purifier repair, RO installation, filter replacement, AMC plans, RO maintenance" />
+  <meta name="author" content="Ashish Enterprises" />
+
+  <title>Ashish Enterprises | RO Water Purifier Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Highlight Section -->
-
+  <!-- Top Call Bar -->
   <div class="tp-Highlight-container" id="topCallBar">
     <h2 class="tp-header">Need Fast RO Service?</h2>
     <p class="tp-para">
@@ -35,45 +47,41 @@
     <a href="tel:+919522411854" class="tp-btn">📞 Call Now</a>
   </div>
 
-
-  <!-- Header / Navbar -->
-
+  <!-- Header -->
   <header class="hr-hero header" id="mainHeader">
     <div class="hdr-container navbar">
       <div class="logo">
         <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603011/GacImages/btitbaf7ekdt95whthkd.jpg"
-          alt="Ashish Enterprises Logo" width="80" height="80">
+          alt="Ashish Enterprises Logo" width="80" height="80" />
       </div>
+
       <ul id="navMenu" class="hdr-nav-menu">
         <li><a href="#services">Services</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#amc">AMC Plans</a></li>
-
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="menu-icon">
-        <i class="fa-solid fa-bars" onclick=HandleMenuClick()>
-        </i>
+        <i class="fa-solid fa-bars" onclick="HandleMenuClick()"></i>
       </div>
     </div>
   </header>
 
-  <!-- home section  -->
-
-
+  <!-- Hero -->
   <section class="hm-hero hero">
     <div class="container hm-hero-grid">
       <div class="hm-hero-text">
         <span class="hm-tag">Trusted RO Water Solution</span>
         <h1>Pure Water, Better Health for Your Family</h1>
         <p>
-          Ashish Enterprises provides RO installation, maintenance, filter replacement,
-          AMC plans, repair services, and affordable water purifier solutions for homes and offices.
+          Ashish Enterprises provides reliable RO installation, repair, maintenance,
+          filter replacement, and AMC services for homes and offices.
         </p>
 
         <div class="hm-hero-buttons">
-          <!-- <a href="#booking" class="hm-btn hm-btn-primary">Book Service</a> -->
+          <a href="#contact" class="hm-btn hm-btn-primary">Book Service</a>
           <a href="#products" class="hm-btn hm-btn-outline">View RO Models</a>
         </div>
 
@@ -85,107 +93,97 @@
       </div>
 
       <div class="hm-hero-image">
-        <div class="hm-hero-main-img">
-
-        </div>
+        <div class="hm-hero-main-img"></div>
 
         <div class="hm-floating-card">
-          <h3>24/7 Enquiry Support</h3>
-          <p>Quick response on call and WhatsApp for RO service and repair.</p>
+          <h3>Quick Enquiry Support</h3>
+          <p>Fast response on call and WhatsApp for RO service and repair assistance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services section  -->
-
+  <!-- Services -->
   <section class="prd-section hero" id="services">
     <div class="container">
       <div class="prd-section-title">
-        <h2>Services Overview</h2>
-        <p>Everything your RO system needs — from installation to maintenance and support.</p>
+        <h2>Our Services</h2>
+        <p>Everything your RO system needs — from installation to regular maintenance.</p>
       </div>
 
       <div class="prd-grid-4">
         <div class="prd-card">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774602982/GacImages/vy5ifq4dszwgj4xjckln.jpg"
-            alt="RO Installation">
+            alt="RO Installation Service" />
           <h3>RO Installation</h3>
-          <p>Professional setup for home and office RO systems with clean finishing.</p>
-          <div class="prdsec-price">₹12,499</div>
+          <p>Professional setup for home and office RO systems with proper fitting and testing.</p>
+          <div class="prdsec-price">Starting from ₹499</div>
         </div>
 
         <div class="prd-card">
-
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603027/GacImages/evb0z8qzcakza6ycqb0w.jpg"
-            alt="RO Installation">
-
-          <h3>Filter Change</h3>
-          <p>Membrane, sediment, carbon and all filter replacements at affordable charges.</p>
-          <div class="prdsec-price">₹12,499</div>
-
+            alt="RO Filter Change Service" />
+          <h3>Filter Replacement</h3>
+          <p>Membrane, sediment, carbon and filter replacement service with quality parts.</p>
+          <div class="prdsec-price">Starting from ₹299</div>
         </div>
 
         <div class="prd-card">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603073/GacImages/ap0qm4g2g1tuk1ofhid8.jpg"
-            alt="RO Installation">
+            alt="RO Repair Service" />
           <h3>RO Repair</h3>
-          <p>Fix water leakage, low pressure, taste issues, noise, and motor problems in a few minutes.</p>
-          <div class="prdsec-price">₹12,499</div>
-
+          <p>Repair leakage, low pressure, bad taste, motor issues, and purifier performance problems.</p>
+          <div class="prdsec-price">Inspection + Repair Charges</div>
         </div>
 
         <div class="prd-card">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774602998/GacImages/qw2pkszjmpumayta7ipi.png"
-            alt="RO Installation">
+            alt="AMC Plans for RO" />
           <h3>AMC Plans</h3>
-          <p>Annual maintenance plans for worry-free service and timely checkups.</p>
-          <div class="prdsec-price">₹12,499</div>
-
+          <p>Affordable annual maintenance plans for regular service and smooth RO performance.</p>
+          <div class="prdsec-price">Starting from ₹1,999/year</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- product setcion style  -->
+  <!-- Products -->
   <section class="prdsec-section" id="products">
     <div class="container">
       <div class="prdsec-section-title">
-        <h2>RO Models & Product Images</h2>
-        <p>Showcase your RO product collection here. Replace these demo images with your real product photos.</p>
+        <h2>RO Models</h2>
+        <p>Explore our available RO water purifier models for home and office use.</p>
       </div>
 
       <div class="prdsec-product-grid" id="productList">
         <div class="prdsec-card prdsec-product-card prdsec-product-item">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774604421/GacImages/irje2yo1ij5aepo6png6.jpg"
-            alt="RO Model 1" />
-
+            alt="Oliver International RO Model" />
           <h3>Oliver International</h3>
-          <p>Advanced purification with multi-stage filtration.</p>
+          <p>Advanced purification with multi-stage filtration for healthy drinking water.</p>
           <div class="prdsec-price">₹12,999</div>
         </div>
 
         <div class="prdsec-card prdsec-product-card prdsec-product-item">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774603857/GacImages/idv9p9kecozcrmilbxdl.jpg"
-            alt="RO Model 2" />
-          <h3>G+ series</h3>
-          <p>Stylish design with powerful purification and mineral balance.</p>
+            alt="G+ Series RO Model" />
+          <h3>G+ Series</h3>
+          <p>Stylish design with effective purification and balanced mineral retention.</p>
           <div class="prdsec-price">₹12,499</div>
         </div>
 
         <div class="prdsec-card prdsec-product-card prdsec-product-item">
           <img src="https://res.cloudinary.com/dieboinjz/image/upload/v1774604626/GacImages/xjikhbwyldmg2x2cgk9b.jpg"
-            alt="RO Model 3" />
+            alt="4matic RO Model" />
           <h3>4matic</h3>
-          <p>Ideal for larger families and office use with high-capacity storage.</p>
+          <p>Suitable for larger families and office spaces with reliable storage capacity.</p>
           <div class="prdsec-price">₹12,999</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- services price section  -->
-
+  <!-- AMC -->
   <section class="srprse-section" id="amc">
     <div class="container">
       <div class="srprse-section-title">
@@ -198,7 +196,7 @@
           <span class="srprse-tag">Basic</span>
           <h3>Silver AMC</h3>
           <div class="srprse-price">₹1,999 <span>/ Year</span></div>
-          <p>2 service visits, general cleaning, and basic maintenance support.</p>
+          <p>2 service visits, cleaning, and basic maintenance support.</p>
         </div>
 
         <div class="srprse-card srprse-card-featured">
@@ -212,56 +210,137 @@
           <span class="srprse-tag">Premium</span>
           <h3>Platinum AMC</h3>
           <div class="srprse-price">₹5,499 <span>/ Year</span></div>
-          <p>Unlimited support calls, regular maintenance, and premium care.</p>
+          <p>Regular maintenance, priority support, and premium care for your purifier.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- feedback section here  -->
-
-  <section class="fdbc-section" id="reviews">
+  <!-- About -->
+  <section class="abt-section" id="about">
     <div class="container">
-      <div class="fdbc-section-title">
-        <h2>Customer Reviews</h2>
-        <p>Real feedback section for trust building. You can replace demo reviews with real customer testimonials.</p>
+      <div class="prd-section-title">
+        <h2>About Ashish Enterprises</h2>
+        <p>Reliable RO service and water purifier support for homes and offices.</p>
       </div>
 
-      <div class="fdbc-review-grid">
-        <div class="fdbc-card fdbc-review-card">
-          <div class="fdbc-stars">★★★★★</div>
-          <p>“Very quick RO installation service. Good behavior and affordable pricing.”</p>
-          <h4>— Rahul Sharma</h4>
+      <div class="abt-content">
+        <p>
+          Ashish Enterprises is focused on providing dependable RO water purifier services,
+          including installation, repair, filter replacement, maintenance, and AMC support.
+          Our goal is to help customers maintain safe and clean drinking water with timely service and honest
+          assistance.
+        </p>
+        <p>
+          We aim to deliver practical water purification solutions with clear communication,
+          quality service support, and customer-focused assistance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="cnt-section" id="contact">
+    <div class="container">
+      <div class="prd-section-title">
+        <h2>Contact Us</h2>
+        <p>Reach out for installation, repair, maintenance, or general RO service enquiry.</p>
+      </div>
+
+      <div class="cnt-grid">
+        <div class="cnt-card">
+          <h3>Business Information</h3>
+          <p><strong>Business Name:</strong> Ashish Enterprises</p>
+          <p><strong>Phone:</strong> <a href="tel:+919522411854">+91 95224 11854</a></p>
+          <p><strong>Email:</strong> <a
+              href="mailto:support@ashishenterprises.online">support@ashishenterprises.online</a></p>
+          <p><strong>Service Area:</strong> [Add Your City / Area Here]</p>
+          <p><strong>Working Hours:</strong> Mon - Sat | 9:00 AM - 7:00 PM</p>
+          <p><strong>Address:</strong> [Add Your Business Address Here]</p>
         </div>
 
-        <div class="fdbc-card fdbc-review-card">
-          <div class="fdbc-stars">★★★★★</div>
-          <p>“Filter replacement on time and genuine parts used. Recommended service.”</p>
-          <h4>— Priya Verma</h4>
-        </div>
-
-        <div class="fdbc-card fdbc-review-card">
-          <div class="fdbc-stars">★★★★★</div>
-          <p>“My RO was leaking, and it got repaired the same day. Excellent support.”</p>
-          <h4>— Aman Khan</h4>
+        <div class="cnt-card">
+          <h3>Quick Contact</h3>
+          <p>For fast response, you can contact us directly through phone or WhatsApp.</p>
+          <div class="hm-hero-buttons" style="margin-top: 20px;">
+            <a href="tel:+919522411854" class="hm-btn hm-btn-primary">📞 Call Now</a>
+            <a href="https://wa.me/919522411854" target="_blank" rel="noopener noreferrer"
+              class="hm-btn hm-btn-outline">💬 WhatsApp</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
+
+  <!-- Footer -->
   <footer class="ft-footer">
-    <div class="container ft-container">
-      <p class="ft-text">© 2026 Ashish Enterprises | RO Installation, Repair & Water Purifier Services</p>
+    <div class="container ft-footer-grid">
+
+      <!-- Company Info -->
+      <div class="ft-box">
+        <h2 class="ft-logo">Ashish Enterprises</h2>
+        <p class="ft-desc">
+          Trusted RO water purifier service provider for installation, repair,
+          filter replacement, AMC plans, and maintenance support for homes and offices.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="ft-box">
+        <h3 class="ft-title">Quick Links</h3>
+        <ul class="ft-links">
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#products">RO Models</a></li>
+          <li><a href="#amc">AMC Plans</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="ft-box">
+        <h3 class="ft-title">Our Services</h3>
+        <ul class="ft-links">
+          <li><a href="#services">RO Installation</a></li>
+          <li><a href="#services">Filter Replacement</a></li>
+          <li><a href="#services">RO Repair</a></li>
+          <li><a href="#services">AMC Support</a></li>
+          <li><a href="#services">Maintenance Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="ft-box">
+        <h3 class="ft-title">Contact Info</h3>
+        <p class="ft-contact"><i class="fa-solid fa-phone"></i> <a href="tel:+919522411854">+91 95224 11854</a></p>
+        <p class="ft-contact"><i class="fa-solid fa-envelope"></i> <a
+            href="mailto:support@ashishenterprises.online">support@ashishenterprises.online</a></p>
+        <p class="ft-contact"><i class="fa-solid fa-location-dot"></i> [Add Your City / Area Here]</p>
+        <p class="ft-contact"><i class="fa-solid fa-clock"></i> Mon - Sat | 9:00 AM - 7:00 PM</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="ft-bottom">
+      <div class="container ft-bottom-flex">
+        <p>© 2026 Ashish Enterprises. All Rights Reserved.</p>
+        <div class="ft-bottom-links">
+          <a href="./Condition/Termsandcondition.html">Terms & Conditions</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/919522411854" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
     title="Chat on WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="70" height="70" />
   </a>
 
-  <!-- JS for Search -->
+  <!-- JS -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const topBar = document.getElementById("topCallBar");
@@ -282,7 +361,6 @@
       document.getElementById("navMenu").classList.toggle("show");
     }
   </script>
-
 
 </body>
 

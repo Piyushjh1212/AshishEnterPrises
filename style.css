@@ -44,6 +44,8 @@ ul {
 ========================= */
 .tp-Highlight-container {
   position: fixed;
+  display: flex;
+  justify-content: space-around;
   top: -120px;
   left: 0;
   width: 100%;
@@ -92,6 +94,7 @@ ul {
 ========================= */
 .header {
   position: sticky;
+  padding: 0 30px 0 30px ;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -102,7 +105,7 @@ ul {
 }
 
 .header.with-topbar {
-  top: 80px;
+  top: 70px;
 }
 
 .navbar {
@@ -797,7 +800,7 @@ section {
   }
 
   .header.with-topbar {
-    top: 95px;
+    top: 60px;
   }
 }
 
@@ -823,6 +826,8 @@ section {
   .tp-Highlight-container {
     padding: 12px 14px;
   }
+
+ 
 
   .whatsapp-float img {
     width: 58px;
